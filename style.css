@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font: 1.2em/1.2 Helvetica, aria, sans-serif;
+    margin: 0 3%;
+    
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    margin: .9em 0 0 0;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin: 1.5em 0 0 0;
+  }
+  
+  img {
+    max-width: 100%;
+    min-width: 100%; 
+  }
+  .nav {
+    text-align: left;
+    height: 50px;
+    line-height: 40px;
+  }
+  .menu {
+    margin: 0 30px 0 0;
+    display: inline;
+  }
+  .menu a {
+    text-decoration: none;
+    color: chartreuse;
+    line-height: 50px;
+    margin-left: 15px;
+  }
+  label {
+    font-size: 20px;
+    line-height: 50px;
+    display: none;
+  }
+
+  #toggle {
+  display: none;
+}
+.nav a:hover {
+    background-color: rgb(77, 73, 73);
+    color: rgb(15, 195, 240);
+    font-style: oblique;
+  }
+
+/* filter (effect) params HERE 👇🏾*/ 
+ #one {
+   filter:blur(15px);
+ }
+  #two {
+    filter: brightness(300%);
+  }
+  #three {
+    filter: saturate(2.5);
+  }
+  #four {
+    filter: invert(.9);
+  }
+  #five {
+  filter: contrast(300%);
+  }
+  #six {
+    filter:drop-shadow(blue 1px 10px 15px);
+  }
+  figure {
+    border: 5px black solid; 
+    border-radius: 5px;
+    color: white;
+    margin: 0 0 25px 0;
+    padding: 10px;
+    text-align: center;
+  }
+  figcaption {
+    font-size: .8em;
+  }
+  
+/* Look up a media query property */
+/*break nav here*/
+
+/*break point one*/
+@media screen and (max-width: 740px) and (min-width: 340px) {
+  body {
+    background-color: rgb(212, 14, 212);
+    margin: 25px 6%;
+  }
+  figure {
+    float: left;
+    width: 45%;
+    margin-right: 4.5%;
+  }
+}
+/*break point two*/
+@media screen and (max-width: 1039px) and (min-width:741px) {
+  body {
+    background-color: blue;
+    margin: 25px 8%;
+  }
+  figure {
+    float: left;
+    width: 45%;
+    margin-right: 4.5%;
+  }
+}
+/*break point three*/
+@media  screen and (min-width: 1040px) and (max-width: 1800px) {
+  body {
+    background-color: aqua;
+    margin: 25px 10%;
+  }
+  figure {
+    width: 45%;
+    margin-right: 2.5%;
+  }
+  
+}
+@media screen and (min-width: 320px) and (max-width: 510px) {
+  label {
+    display: block;
+  }
+  .menu {
+    text-align: left;
+    width: 100%;
+    color: hotpink;
+    display: none;
+  }
+  .menu a {
+    display: block;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  #toggle:checked + .menu {
+    display: block;
+    position: absolute;
+    width: 30%;
+    background-color: black;
+    
+  }
+}
