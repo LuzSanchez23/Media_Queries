@@ -8,6 +8,7 @@ html {
   body {
     font: 1.2em/1.2 Helvetica, aria, sans-serif;
     margin: 0 3%;
+   
     
   }
   
@@ -93,6 +94,11 @@ html {
 @media screen and (max-width: 740px) and (min-width: 340px) {
   body {
     background-color: rgb(212, 14, 212);
+    background-image: url("Images/alicia-perez-J8NOYu_wQn8-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     margin: 25px 6%;
   }
   figure {
@@ -105,6 +111,11 @@ html {
 @media screen and (max-width: 1039px) and (min-width:741px) {
   body {
     background-color: blue;
+    background-image: url(images/Computer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     margin: 25px 8%;
   }
   figure {
@@ -117,6 +128,11 @@ html {
 @media  screen and (min-width: 1040px) and (max-width: 1800px) {
   body {
     background-color: aqua;
+    background-image: url(Images/Cupcakes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     margin: 25px 10%;
   }
   figure {
